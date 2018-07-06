@@ -29,6 +29,8 @@ var oObject = {
 		if (numResults > 8) { iLoopIndex = 8; } else {iLoopIndex = numResults; } ; 
 		//console.log("INSIDE addHotelRows > numResults=", numResults, "iLoopIndex=", iCounter) ;
 
+		$("#trainBody").empty() ; 
+		
 		//for (iCounter=0; iCounter < 4; iCounter++ )
 		for (iCounter=0; iCounter < iLoopIndex; iCounter++ )
 		{
