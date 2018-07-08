@@ -19,7 +19,6 @@ $(document).ready(function() {
 						bitPrice[i] = (USD / response.BTC.USD).toFixed(7) ;
 						//console.log("INSIDE convertCrypto > USD[i]=", results[i].total_price.amount, "bitPrice=", bitPrice[i]) ;
 					}
-					
 				//console.log("INSIDE convertCrypto > bitPrice=", bitPrice) ;
 				
 				})	// end then 
@@ -29,7 +28,7 @@ $(document).ready(function() {
 			var numResults = results.length ; 
 			var iLoopIndex = 0 ;  var iCounter = 0; 
 			if (numResults > 8) { iLoopIndex = 8; } else {iLoopIndex = numResults; } ; 
-			//console.log("INSIDE addHotelRows > numResults=", numResults, "iLoopIndex=", iCounter) ;
+			
 			$("#hotelBody").empty() ; 
 	
 			//console.log("INSIDE addHotelRows > bitPrice=", bitPrice) ;
@@ -37,8 +36,6 @@ $(document).ready(function() {
 			//for (iCounter=0; iCounter < 3; iCounter++ )
 			for (iCounter=0; iCounter < iLoopIndex; iCounter++ )
 			{
-				console.log("INSIDE addHotelRows LOOP > bitPrice[]=", bitPrice[iCounter]) ;
-
 				var newRow = $("<tr>").append(
 					$("<td>").text(results[iCounter].property_name),
 					$("<td>").text(results[iCounter].address.line1),
